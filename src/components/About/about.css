@@ -1,0 +1,32 @@
+.meToo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    color: #000000;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    /* height: 400px; */
+    min-height: 300px;
+    z-index: -1;
+    background: linear-gradient(250deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.6) 200%), url(../../assets/a.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* text-align: center; */
+}
+
+.abtBtn {
+    background: #f5a623;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.myName {
+    right: 10px;
+}
+
