@@ -64,3 +64,9 @@ pre {
     width: 250px;
     margin: 0 auto;
 }
+@media (min-width: 350px) and (max-width: 900px) {
+    .myImg {
+        width: inherit;
+        margin: 0 auto;
+    }
+}
