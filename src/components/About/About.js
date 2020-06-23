@@ -40,8 +40,6 @@ class About extends React.Component {
 
                 <div className="row">
                   <div className="col-12">
-                    <hr />
-
                     <ul className="list-unstyled">
                       {this.state.instructions.map((entry) => (
                         <li>
