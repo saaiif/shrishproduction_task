@@ -8,10 +8,8 @@
     position: relative;
     width: 100%;
     max-width: 1440px;
-    /* height: 400px; */
     min-height: 300px;
-    z-index: -1;
-    background: linear-gradient(250deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.6) 200%), url(../../assets/a.jpg);
+    background: linear-gradient(250deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.6) 200%), url(../../assets/a1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +23,7 @@
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
+    margin: 10px 0;
 }
 .myName {
     right: 10px;

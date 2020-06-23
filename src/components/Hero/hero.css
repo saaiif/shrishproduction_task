@@ -4,7 +4,7 @@
     max-width: 1440px;
     height: 100vh;
     z-index: -1;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../assets/hero.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url(../../assets/hero1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,6 +27,8 @@
 .mainTitle .subTitle {
     /* font-size: 50px; */
     margin: 50px auto;
+    text-align: center;
+    font-size: 16px;
 }
 .twobtns > button {
     color: #fff;
@@ -37,7 +39,6 @@
     margin: 0 40px;
 }
 .dot {
-    color: #fff;
     width: 36px;
     height: 60px;
     border: 3px solid #fff;
@@ -47,4 +48,5 @@
 }
 .dot i {
     font-size: 9px;
+    color: #fff;
 }
