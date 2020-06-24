@@ -3,9 +3,9 @@ import React from "react";
 import "./Insight.css";
 const Insight = () => {
   return (
-    <div className="insight">
-      <section class="text-white body-font ">
-        <div class="container px-5 py-24 inContent">
+    <div>
+      <section class="text-white body-font insight">
+        <div class="container px-5 py-20 inContent">
           <div class="mb-5 insheader">
             <h1>
               <b>Why Choose</b> Insight?

@@ -10,8 +10,4 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-.form-control {
-    padding: inherit;
-    height: inherit;
-    font-size: inherit;
-}
+

@@ -29,3 +29,9 @@
     right: 10px;
 }
 
+.form-control > .aboutIns {
+    padding: inherit;
+    width: inherit;
+    height: inherit;
+    font-size: inherit;
+}

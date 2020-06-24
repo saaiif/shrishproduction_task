@@ -1,7 +1,7 @@
 import React from "react";
 import "./Ourwork.css";
 function Draggable(props) {
-  const { children, onDragStart, onDragEnd, value, className = "" } = props;
+  const { children, onDragStart, onDragEnd, value} = props;
   function handleDragStart(e) {
     if (typeof onDragStart === "function") onDragStart(e, value);
   }
@@ -12,7 +12,7 @@ function Draggable(props) {
     <div
       onDragStart={handleDragStart}
       onDragEnd={handleDragEnd}
-      className={className}
+      // className={className}
       draggable
     >
       {children}
@@ -40,7 +40,7 @@ function Droppable(props) {
 const DEG = randInt(360);
 const FLEX = false;
 
-const LIST = [...Array(8).keys()].map((e) => {
+const LIST = [...Array(11).keys()].map((e) => {
   return `https://picsum.photos/125?${randInt()}`;
 });
 
@@ -89,15 +89,16 @@ function Ourwork() {
 
   return (
     <FlexContainer deg={DEG} flex={FLEX}>
-      <div className="container bkg">
-        <div className="h1 text-center text-white text-shadow pt-10 titleSize">
+      <div className="bkg">
+        <div className="h1 text-center text-white text-shadow titleSize">
           OUR <b>MAGICAL WORKS</b>
         </div>
-        <div className="p-3">
-          <div className="form-row">
+        {/* className="p-3" */}
+        <div>
+          <div className="moa">
             {list.map((e, i) => {
               return (
-                <div className="col-4">
+                <div>
                   <Droppable
                     onDrop={handleDrop}
                     onDragOver={handleDragOver}
@@ -108,12 +109,11 @@ function Ourwork() {
                       onDragEnd={handleDragEnd}
                       value={i}
                     >
-                      <div className="myImg">
+                      <div>
                         <img
                           key={i}
                           src={e}
-                          className="w-100 border p-1 m-2 shadow-sm"
-                          style={{ maxHeight: 150, objectFit: "contain" }}
+                          style={{minWidth:"150px", objectFit:"contain"}}
                         />
                       </div>
                     </Draggable>
@@ -122,7 +122,7 @@ function Ourwork() {
               );
             })}
           </div>
-          <div className="text-center mb-3 mt-6">
+          <div className="text-center mt-6 addBtn">
             <button
               className="btn btn-success btn-sm pl-3 pr-3 rounded-pill shadow"
               onClick={handleUpload}
@@ -143,13 +143,13 @@ function Ourwork() {
 }
 
 function FlexContainer(props) {
-  const { children, deg = randInt(360), bg, style = {}, flex = true } = props;
+  const { children, deg = randInt(360), bg } = props;
   const classNames = [
-    "align-content-center align-items-center justify-content-center flex-wrap w-100 v-100 vh-100",
+
   ];
-  if (flex) classNames.push("d-flex");
+  // if (flex) classNames.push("d-flex");
   return (
-    <div className={classNames.join(" ")} style={style}>
+    <div >
       {children}
     </div>
   );
@@ -158,9 +158,9 @@ function FlexContainer(props) {
 function Details(props) {
   const { summary = "details", children, className = "" } = props;
   return (
-    <details className={className}>
+    <details>
       <summary>{summary}</summary>
-      <div className="mt-3 animated faster slideInDown">{children}</div>
+      <div>{children}</div>
     </details>
   );
 }
@@ -176,7 +176,7 @@ function PreCode(props) {
   }
 
   return (
-    <pre className={`p-3 bg-dark text-white rounded shadow ${className}`}>
+    <pre >
       <code>{children}</code>
     </pre>
   );

@@ -1,6 +1,7 @@
 .insight {
     background: linear-gradient(150deg, #f7b733 30%, #f37335 100%);
     color: #000000;
+    height: 500px;
 }
 .mt-2 {
     font-size: 12px;

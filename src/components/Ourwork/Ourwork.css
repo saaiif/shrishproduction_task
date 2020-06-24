@@ -9,22 +9,20 @@ body,
 }
 .bkg {
     position: relative;
-    background: linear-gradient(185deg, rgba(255, 255, 255, 0.001) 20%, rgba(15, 7, 44, 0.9) 100%),
-        url('../../assets/work.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, .7) 100%), url('../../assets/work2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 100%;
+    min-height: 100vh;
+    width: 100%;
 }
 .pill {
-    border-radius: 2.5rem;
+    /* border-radius: 2.5rem; */
 }
 .titleSize {
-    font-size: 24px;
-}
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    font-size: 28px;
+    padding-top: 80px;
+    padding-bottom: 30px;
 }
 
 .text-shadow {
@@ -61,7 +59,7 @@ pre {
     border-color: rgba(248, 249, 250, .5);
 }
 .myImg {
-    width: 250px;
+    /* width: 250px; */
     margin: 0 auto;
 }
 @media (min-width: 350px) and (max-width: 900px) {
@@ -69,4 +67,13 @@ pre {
         width: inherit;
         margin: 0 auto;
     }
+}
+.moa {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 600px;
+    margin: 0 auto;
+}
+.addBtn > button {
+    margin-bottom: 20px;
 }

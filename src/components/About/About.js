@@ -38,7 +38,7 @@ class About extends React.Component {
                   />
                 </h1>
 
-                <div className="row">
+                <div className="row aboutIns">
                   <div className="col-12">
                     <ul className="list-unstyled">
                       {this.state.instructions.map((entry) => (

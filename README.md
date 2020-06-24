@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### 2. Only About Section is editable.
 
+https://shirishprod-task.netlify.app/
 
 ## Available Scripts
 
